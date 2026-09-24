@@ -4,6 +4,10 @@ An AI-powered library assistant that helps users discover books, check inventory
 
 The project combines a LangGraph ReAct agent with semantic book search, a Chroma vector database, and a SQLite inventory database. A Streamlit application provides the user interface.
 
+## Live Demo
+
+Try the deployed application: [AI Library Agent on Streamlit](https://ai-library-agent.streamlit.app/)
+
 ## Features
 
 - Search the catalogue using natural-language questions.
