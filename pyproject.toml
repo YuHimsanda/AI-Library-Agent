@@ -7,7 +7,15 @@ authors = [
     { name = "Yuhas", email = "yuhimsanda@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "langchain-chroma",
+    "langchain-groq",
+    "langchain-huggingface",
+    "langgraph",
+    "pandas",
+    "python-dotenv",
+    "sentence-transformers",
+]
 
 [project.scripts]
 ai-library-agent = "ai_library_agent:main"
