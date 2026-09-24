@@ -57,7 +57,7 @@ with st.sidebar:
                 conn.close()
                 st.dataframe(df)
             except Exception as e:
-               st.error(f"Error retrieving data: {e}")
+                st.error("Error retrieving data.")
         if st.button("Log Out"):
             st.session_state.admin_logged_in = False
             st.rerun()
