@@ -15,6 +15,7 @@ dependencies = [
     "pandas",
     "python-dotenv",
     "sentence-transformers",
+    "streamlit",
 ]
 
 [project.scripts]
