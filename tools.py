@@ -48,7 +48,10 @@ def check_book_availability(title: str) -> str:
         cursor = conn.cursor()
         
        
-        cursor.execute("SELECT title,quantity FROM inventory WHERE title = ?", (title,))
+        cursor.execute(
+            "SELECT title, quantity FROM inventory WHERE title LIKE ? COLLATE NOCASE",
+            (f"%{title}%",),
+        )
         result = cursor.fetchone() 
         
      
